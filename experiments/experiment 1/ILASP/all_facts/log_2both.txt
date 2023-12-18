@@ -1,0 +1,15 @@
+christian@staff0642 ILASP % ./ILASP-4.3.1-macOS-intel/ILASP --version=4 teammate_2both.las
+UNSATISFIABLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Pre-processing                          : 0.037s
+%% Hypothesis Space Generation             : 0.872s
+%% Conflict analysis                       : 100.463s
+%%   - Negative Examples                   : 96.864s
+%%   - Positive Examples                   : 3.598s
+%% Counterexample search                   : 9.261s
+%%   - CDOEs                               : 0.18s
+%%   - CDPIs                               : 8.992s
+%% Hypothesis Search                       : 1773.79s
+%% Total                                   : 1914.83s
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+christian@staff0642 ILASP % 

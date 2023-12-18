@@ -1,0 +1,13 @@
+christian@staff0642 Popper-2.1.0 % python3 popper.py data/2both 
+08:42:14 Searching programs of size: 2
+08:42:14 Searching programs of size: 3
+08:42:14 Searching programs of size: 4
+08:42:14 ********************
+08:42:14 New best hypothesis:
+08:42:14 tp:2 fn:0 size:4
+08:42:14 isAllowedToUse(A,B):- importsClass(D,C),containsClass(A,D),containsClass(B,C).
+08:42:14 ********************
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:2 FP:0 Size:4
+isAllowedToUse(A,B):- importsClass(D,C),containsClass(A,D),containsClass(B,C).
+******************************

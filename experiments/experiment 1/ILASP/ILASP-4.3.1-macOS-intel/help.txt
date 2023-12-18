@@ -1,0 +1,104 @@
+
+#pos(p1, { isAllowedToUse(teammates_logic_api, teammates_logic_core)},{ isAllowedToUse(teammates_logic_core, teammates_logic_backdoor)}).
+#pos(p2, { isAllowedToUse(teammates_logic_backdoor, teammates_logic_api)},{ isAllowedToUse(teammates_logic_api, teammates_logic_backdoor)}).
+
+
+#pos({ isAllowedToUse(teammates_logic_backdoor, teammates_logic_api, isAllowedToUse(teammates_logic_api, teammates_logic_core))},{ isAllowedToUse(teammates_logic_api, teammates_logic_backdoor), isAllowedToUse(teammates_logic_core, teammates_logic_backdoor)}).
+
+
+
+ILASP version 4.3.1 (release built on Jul 13 2022)
+usage: ILASP [options] [file]
+
+When running ILASP, the version must be specified using:
+    --version=[1|2|2i|3|4].
+
+----------------------------------------------------------------------------------------
+
+ILASP version 1:
+  ILASP1 is not available in this version. It was previously provided for completeness,
+  but does not scale well for problems with negative examples. ILASP1 was presented in
+  the JELIA 2014 paper "Inductive Learning of Answer Set Programs".
+
+----------------------------------------------------------------------------------------
+
+ILASP version 2:
+  This version of ILASP encodes the learning task as a (multi-shot) ASP program,
+  which is solved in clingo. ILASP2 was presented at ICLP 2015 in the paper
+  "Learning Weak Constraints in Answer Set Programming". For simple tasks, this is
+  often the fastest algorithm, as the later versions have more overheads, which are
+  necessary for solving larger tasks.
+
+
+----------------------------------------------------------------------------------------
+
+ILASP version 2i:
+  This is the iterative version of the ILASP2 algorithm, presented at ICLP 2016 in the
+  paper "Iterative Learning of Answer Set Programs from Context Dependent Examples".
+  The algorithm works by iteratively computing a set of "relevant examples". This
+  version of ILASP is well suited at solving tasks with large numbers of non-noisy
+  examples.
+
+  ILASP2i Specific Options:
+    --debug,                 -d  : print intermediate hypotheses and relevant examples.
+    --batch-size=[integer],      : sets the batch size for the counterexample search.
+
+----------------------------------------------------------------------------------------
+
+ILASP version 3:
+  This version of ILASP is targeted specifically at learning in the presence of noise.
+  Unlike previous versions of ILASP, ILASP3 does a lot of work processing individual
+  examples, before considering examples together. In some cases, where the processing
+  is unnecessary, earlier algorithms may perform better, but in general larger tasks
+  ILASP3 can be significantly faster. There are two optional parts of the algorithm,
+  which aim to reuse the information computed for one example for other examples.
+  These features are called "schema propagation" and "constraint propagation", which
+  may be disabled. In older versions of ILASP, these features were called "implication"
+  and "propagation".
+
+    -nsp                         : disable the schema propagation feature.
+    -ncp                         : disable the constraint propagation feature.
+    --max-translate              : continue translating examples until the predicted
+                                     score of the current hypothesis is correct.
+    --debug,                 -d  : print intermediate hypotheses and other information.
+    --restarts,                  : restart the solver for hypothesis search in
+                                     every iteration.
+    --batch-size=[integer],      : sets the batch size for the counterexample search.
+
+ILASP version 4:
+
+  Starting with ILASP2i, recent ILASP systems have moved steadily away from
+  meta-level learning, in favour of a new approach called "Conflict Driven
+  ILP".  In both ILASP3 and ILASP4, when an example is not covered by the
+  current hypothesis, a conflict analysis step is invoked, which leads to a new
+  "coverage constraint" -- a structural constraint which must be satisfied for
+  the example to be covered. In ILASP3, these constraints are very large,
+  making the conflict analysis step very expensive. ILASP4 instead computes
+  much smaller constraints, which often leads to more iterations being
+  required, but each iteration is very short because the conflict analysis step
+  is much less expensive.
+
+  For technical reasons, schema propagation is not required in ILASP4. ILASP4
+  has the following optional flags:
+
+    -ncp                         : disable the constraint propagation feature.
+    --small-constraints          : compute even smaller constraints in conflict
+                                   analysis (switches the constraint strategy from
+                                   all-ufs to single-ufs).
+    --max-translate              : continue translating examples until the
+                                   predicted score of the current hypothesis is
+                                   correct.
+    --debug,                 -d  : print intermediate hypotheses and other
+                                   information.
+    --restarts,                  : restart the solver for hypothesis search in
+                                   every iteration.
+    --opt=[always,on-failure],   : specifies whether the CDILP search for a new
+                                   hypothesis should look for a hypothesis of
+                                   the previous size first (which will be optimal),
+                                   or whether it should go straight to re-optimisation.
+    --batch-size=[integer],      : sets the batch size for the counterexample search.
+
+
+
+Please submit bug reports at https://github.com/marklaw/ILASP-releases/issues.
+For all other queries, please email mark@ilasp.com.

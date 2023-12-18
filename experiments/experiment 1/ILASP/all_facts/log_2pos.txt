@@ -1,0 +1,14 @@
+christian@staff0642 ILASP % ./ILASP-4.3.1-macOS-intel/ILASP --version=4 teammate_2pos.las
+isAllowedToUse(V1,V2) :- package(V2); containsPackage(V3,V1).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Pre-processing                          : 0.131s
+%% Hypothesis Space Generation             : 0.853s
+%% Conflict analysis                       : 3.308s
+%%   - Positive Examples                   : 3.308s
+%% Counterexample search                   : 0.016s
+%%   - CDOEs                               : 0s
+%%   - CDPIs                               : 0.016s
+%% Hypothesis Search                       : 0.178s
+%% Total                                   : 4.513s
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

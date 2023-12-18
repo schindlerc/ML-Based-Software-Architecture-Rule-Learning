@@ -1,0 +1,3 @@
+﻿Rule;Head ;Coverage ;Std Confidence ;PCA Confidence ;Positive Examples ;Body size;PCA Body size ;Functional variable
+?g containsPackage ?a ?g containsPackage ?b;?a isAllowedToUse ?b;1;0,2;0,333333333;2;10;6;-1
+?a isA ?h ?b isA ?h;?a isAllowedToUse ?b;1;0,003610108;0,2;2;554;10;-1

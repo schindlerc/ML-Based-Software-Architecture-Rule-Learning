@@ -1,0 +1,665 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- working_directory(_, "/DIR/TO/ALEPH").
+true.
+
+?- consult(aleph).
+Warning: /DIR/TO/ALEPH/aleph.pl:1179:
+Warning:    Singleton variable in branch: HOVars
+Warning:    Singleton variable in branch: Recursion
+Warning: /DIR/TO/ALEPH/aleph.pl:1925:
+Warning:    Singleton variable in branch: Body
+Warning: /DIR/TO/ALEPH/aleph.pl:1937:
+Warning:    Singleton variable in branch: Body
+Warning: /DIR/TO/ALEPH/aleph.pl:2251:
+Warning:    Singleton variable in branch: PC
+Warning: /DIR/TO/ALEPH/aleph.pl:4286:
+Warning:    Singleton variable in branch: D
+Warning: /DIR/TO/ALEPH/aleph.pl:4591:
+Warning:    Singleton variable in branch: B
+Warning: /DIR/TO/ALEPH/aleph.pl:6031:
+Warning:    Singleton variable in branch: Clause
+Warning:    Singleton variable in branch: D1
+Warning: /DIR/TO/ALEPH/aleph.pl:7839:
+Warning:    Singleton variable in branch: Hash
+Warning: /DIR/TO/ALEPH/aleph.pl:9176:
+Warning:    Singleton variable in branch: Type
+Warning: /DIR/TO/ALEPH/aleph.pl:10218:
+Warning:    Test is always true: var(Id)
+
+
+A L E P H
+Version 6
+Last modified: Sun Jan 1 12:00:00 UTC 2017
+
+Manual: http://www.comlab.ox.ac.uk/oucl/groups/machlearn/Aleph/index.html
+
+true.
+
+?- read_all(teammate).
+[consulting pos examples] [teammate.f]
+[consulting neg examples] [teammate.n]
+true .
+
+?- induce.
+[select example] [1]
+[sat] [1]
+[isAllowedToUse(teammates_logic_api,teammates_logic_core)]
+[repeated literals] [1/21] 
+
+[bottom clause]
+isAllowedToUse(A,B) :-
+   package(A), package(C), package(D), package(E), 
+   package(B), containsClass(A,F), containsClass(A,G), containsClass(A,H), 
+   containsClass(A,I), containsClass(A,J), class(J), class(I), 
+   class(H), class(G), class(F), containsPackage(D,B), 
+   containsPackage(D,E), containsPackage(D,A), containsPackage(C,D).
+[literals] [20]
+[saturation time] [0.013163000000000036]
+[reduce]
+[best label so far] [[1,0,2,1]/0] 
+isAllowedToUse(A,B).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(A).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(B).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsPackage(C,A).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), package(D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), package(A).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), package(D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), package(B).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), package(A).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), package(D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), package(B).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(A), package(C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(A), package(B).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), package(B).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D).
+[2/2]
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C).
+[2/2]
+isAllowedToUse(A,B) :-
+   package(C), containsPackage(C,A), package(D).
+isAllowedToUse(A,B) :-
+   package(C), containsPackage(C,A), package(A).
+isAllowedToUse(A,B) :-
+   package(C), containsPackage(C,A), package(D).
+isAllowedToUse(A,B) :-
+   package(C), containsPackage(C,A), package(B).
+isAllowedToUse(A,B) :-
+   package(C), containsPackage(C,A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), containsPackage(C,A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), containsPackage(C,A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), containsPackage(C,A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), containsPackage(C,A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsPackage(D,C).
+isAllowedToUse(A,B) :-
+   package(C), package(D), package(A).
+isAllowedToUse(A,B) :-
+   package(C), package(D), package(E).
+isAllowedToUse(A,B) :-
+   package(C), package(D), package(B).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(A), containsPackage(C,A).
+isAllowedToUse(A,B) :-
+   package(C), package(A), package(D).
+isAllowedToUse(A,B) :-
+   package(C), package(A), package(B).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsPackage(C,D).
+isAllowedToUse(A,B) :-
+   package(C), package(D), package(B).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsPackage(C,B).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(C), package(A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(A), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(A), package(D).
+isAllowedToUse(A,B) :-
+   package(C), package(A), package(B).
+isAllowedToUse(A,B) :-
+   package(C), package(D), package(B).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), class(C).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), package(D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), package(B).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), class(C).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), package(D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), package(B).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), class(C).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), package(D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), package(B).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), class(C).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), package(D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), package(B).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), class(C).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), package(D).
+isAllowedToUse(A,B) :-
+   package(A), containsClass(A,C), package(B).
+isAllowedToUse(A,B) :-
+   package(A), package(C), package(B).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), package(B), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   package(C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), class(C).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), class(C).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), class(C).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), class(C).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   package(B), containsClass(A,C), class(C).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), containsClass(A,E).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), class(D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), class(C), containsClass(A,D).
+isAllowedToUse(A,B) :-
+   containsClass(A,C), containsClass(A,D), class(D).
+[clauses constructed] [240] 
+[search time] [0.11253000000000002] 
+[best clause] 
+isAllowedToUse(teammates_logic_api,teammates_logic_core).
+[pos cover = 1 neg cover = 0] [pos-neg] [1]
+[atoms left] [1] 
+[positive examples left] [1]
+[estimated time to finish (secs)] [0.11253000000000002]
+[select example] [2]
+[sat] [2]
+[isAllowedToUse(teammates_logic_backdoor,teammates_logic_api)]
+[repeated literals] [1/15] 
+
+[bottom clause]
+isAllowedToUse(A,B) :-
+   package(B), package(C), package(D), package(A), 
+   package(E), containsClass(A,F), containsClass(A,G), class(G), 
+   class(F), containsPackage(D,E), containsPackage(D,B), containsPackage(D,A), 
+   containsPackage(C,D).
+[literals] [14]
+[saturation time] [0.00828899999999999]
+[reduce]
+[best label so far] [[1,0,2,1]/0] 
+isAllowedToUse(A,B).
+[clauses constructed] [1] 
+[search time] [0.00016900000000008575] 
+[best clause] 
+isAllowedToUse(teammates_logic_backdoor,teammates_logic_api).
+[pos cover = 1 neg cover = 0] [pos-neg] [1]
+[atoms left] [0] 
+[positive examples left] [0]
+[estimated time to finish (secs)] [0.0]
+
+[theory]
+
+[Rule 1] [Pos cover = 1 Neg cover = 0]
+isAllowedToUse(teammates_logic_api,teammates_logic_core).
+
+[Rule 2] [Pos cover = 1 Neg cover = 0]
+isAllowedToUse(teammates_logic_backdoor,teammates_logic_api).
+
+[Training set performance]
+         Actual
+       +        - 
+     + 2        0        2 
+Pred 
+     - 0        2        2 
+
+       2        2        4 
+
+Accuracy = 1
+[Training set summary] [[2,0,0,2]]
+[time taken] [0.1438889999999997] 
+[search statistics] 
+[total clauses constructed] [241] 
+[search_time_taken(0.1438889999999997)] 
+true.
+
+?- 

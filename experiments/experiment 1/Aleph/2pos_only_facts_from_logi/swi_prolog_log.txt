@@ -1,0 +1,127 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- working_directory(_, "/DIR/TO/ALEPH").
+true.
+
+?- consult(aleph).
+Warning: /DIR/TO/ALEPH/aleph.pl:1179:
+Warning:    Singleton variable in branch: HOVars
+Warning:    Singleton variable in branch: Recursion
+Warning: /DIR/TO/ALEPH/aleph.pl:1925:
+Warning:    Singleton variable in branch: Body
+Warning: /DIR/TO/ALEPH/aleph.pl:1937:
+Warning:    Singleton variable in branch: Body
+Warning: /DIR/TO/ALEPH/aleph.pl:2251:
+Warning:    Singleton variable in branch: PC
+Warning: /DIR/TO/ALEPH/aleph.pl:4286:
+Warning:    Singleton variable in branch: D
+Warning: /DIR/TO/ALEPH/aleph.pl:4591:
+Warning:    Singleton variable in branch: B
+Warning: /DIR/TO/ALEPH/aleph.pl:6031:
+Warning:    Singleton variable in branch: Clause
+Warning:    Singleton variable in branch: D1
+Warning: /DIR/TO/ALEPH/aleph.pl:7839:
+Warning:    Singleton variable in branch: Hash
+Warning: /DIR/TO/ALEPH/aleph.pl:9176:
+Warning:    Singleton variable in branch: Type
+Warning: /DIR/TO/ALEPH/aleph.pl:10218:
+Warning:    Test is always true: var(Id)
+
+
+A L E P H
+Version 6
+Last modified: Sun Jan 1 12:00:00 UTC 2017
+
+Manual: http://www.comlab.ox.ac.uk/oucl/groups/machlearn/Aleph/index.html
+
+true.
+
+?- read_all(teammate).
+[consulting pos examples] [teammate.f]
+[consulting neg examples] [teammate.n]
+true 
+Unknown action: i (h for help)
+Action? ;
+false.
+
+?- induce.
+[select example] [1]
+[sat] [1]
+[isAllowedToUse(teammates_logic_api,teammates_logic_core)]
+[repeated literals] [1/21] 
+
+[bottom clause]
+isAllowedToUse(A,B) :-
+   package(A), package(C), package(D), package(E), 
+   package(B), containsClass(A,F), containsClass(A,G), containsClass(A,H), 
+   containsClass(A,I), containsClass(A,J), class(J), class(I), 
+   class(H), class(G), class(F), containsPackage(D,B), 
+   containsPackage(D,E), containsPackage(D,A), containsPackage(C,D).
+[literals] [20]
+[saturation time] [0.018988000000000227]
+[reduce]
+[best label so far] [[1,0,2,1]/0] 
+isAllowedToUse(A,B).
+[2/0]
+isAllowedToUse(A,B) :-
+   package(C).
+[2/0]
+isAllowedToUse(A,B) :-
+   package(C).
+[2/0]
+isAllowedToUse(A,B) :-
+   package(A).
+[2/0]
+isAllowedToUse(A,B) :-
+   package(C).
+[2/0]
+isAllowedToUse(A,B) :-
+   package(B).
+[2/0]
+[-------------------------------------]
+[found clause]
+isAllowedToUse(A,B) :-
+   package(B).
+[pos cover = 2 neg cover = 0] [pos-neg] [2]
+[clause label] [[2,0,2,2]]
+[clauses constructed] [6]
+[-------------------------------------]
+[clauses constructed] [6] 
+[search time] [0.0019339999999998803] 
+[best clause] 
+isAllowedToUse(A,B) :-
+   package(B).
+[pos cover = 2 neg cover = 0] [pos-neg] [2]
+[atoms left] [0] 
+[positive examples left] [0]
+[estimated time to finish (secs)] [0.0]
+
+[theory]
+
+[Rule 1] [Pos cover = 2 Neg cover = 0]
+isAllowedToUse(A,B) :-
+   package(B).
+
+[Training set performance]
+         Actual
+       +        - 
+     + 2        0        2 
+Pred 
+     - 0        0        0 
+
+       2        0        2 
+
+Accuracy = 1
+[Training set summary] [[2,0,0,0]]
+[time taken] [0.032704999999999984] 
+[search statistics] 
+[total clauses constructed] [6] 
+[search_time_taken(0.032704999999999984)] 
+true.
+
+?- 

@@ -1,0 +1,155 @@
+set_21
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:3 FN:0 TN:3 FP:0 Size:4
+isAllowedToUse(A,B):- importsClass(C,D),containsClass(A,C),containsClass(B,D).
+******************************
+
+set_28
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:3 FN:0 TN:3 FP:0 Size:5
+isAllowedToUse(A,B):- importsClass(D,C),package(A),containsClass(B,D),importsClass(C,D).
+******************************
+
+set_43
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(B,D),importsClass(C,D),containsClass(A,C).
+******************************
+
+set_44
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(B,D),importsClass(C,D),containsClass(A,C).
+******************************
+
+set_16
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:3 FN:0 TN:3 FP:0 Size:4
+isAllowedToUse(A,B):- importsClass(D,C),containsClass(A,D),containsClass(B,C).
+******************************
+
+set_27
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(B,D),importsClass(C,D),containsClass(A,C).
+******************************
+
+set_45
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:3 FN:0 TN:3 FP:0 Size:6
+isAllowedToUse(A,B):- importsClass(D,E),importsClass(D,C),containsClass(B,E),importsClass(E,C),containsClass(A,D).
+******************************
+
+set_2
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:3
+isAllowedToUse(A,B):- containsPackage(C,A),containsPackage(C,B).
+******************************
+
+set_5
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(B,D),importsClass(C,D),containsClass(A,C).
+******************************
+
+set_34
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:3 FN:0 TN:3 FP:0 Size:4
+isAllowedToUse(A,B):- importsClass(C,D),containsClass(A,C),containsClass(B,D).
+******************************
+
+set_32
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(A,C),importsClass(C,D),containsClass(B,D).
+******************************
+
+set_47
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:4 FN:0 TN:2 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(B,C),containsClass(A,D),importsClass(D,C).
+******************************
+
+set_40
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(B,D),importsClass(C,D),containsClass(A,C).
+******************************
+
+set_49
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(B,D),containsClass(A,C),importsClass(C,D).
+******************************
+
+set_25
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:3 FN:0 TN:3 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(B,D),importsClass(C,D),containsClass(A,C).
+******************************
+
+set_13
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- importsClass(C,D),containsClass(A,C),containsClass(B,D).
+******************************
+
+set_48
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:3 FN:0 TN:3 FP:0 Size:6
+isAllowedToUse(A,B):- containsClass(A,C),containsClass(B,D),importsClass(D,E),importsClass(C,D),importsClass(E,D).
+******************************
+
+set_46
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(A,C),containsClass(B,D),importsClass(C,D).
+******************************
+
+set_12
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(B,D),importsClass(C,D),containsClass(A,C).
+******************************
+
+set_23
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(B,C),importsClass(D,C),containsClass(A,D).
+******************************
+
+set_9
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(B,C),importsClass(D,C),containsClass(A,D).
+******************************
+
+set_8
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(A,C),importsClass(C,D),containsClass(B,D).
+******************************
+
+set_37
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:4 FN:0 TN:2 FP:0 Size:3
+isAllowedToUse(A,B):- containsPackage(C,A),containsPackage(C,B).
+******************************
+
+set_31
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(A,C),importsClass(C,D),containsClass(B,D).
+******************************
+
+set_36
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:3 FN:0 TN:3 FP:0 Size:4
+isAllowedToUse(A,B):- containsClass(A,C),containsClass(B,D),importsClass(C,D).
+******************************
+
+set_38
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:4 FP:0 Size:4
+isAllowedToUse(A,B):- importsClass(C,D),containsClass(B,D),containsClass(A,C).
+******************************

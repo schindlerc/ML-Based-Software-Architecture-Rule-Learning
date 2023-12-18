@@ -1,0 +1,95 @@
+model: Google Bard (experiment conducted 21.11.2023)
+
+user: 
+I would like you to ask me for specific facts, so you are able to induce a first order logical rule that explains all the positive and non of the negative examples. You should ask questions until this condition is met or to achieve this goal (alternatively, forever) Allowed predicates to ask for are:
+package/1
+containsPackage/2
+class/1
+containsClass/2
+importsClass/2
+
+Ask me questions one at at time.
+The positive examples are:
+isAllowedToUse(teammates_logic_api, teammates_logic_core).
+isAllowedToUse(teammates_logic_backdoor, teammates_logic_api).
+
+
+assistant:
+What class does package teammates_logic_core belong to?
+
+
+user:
+please ask for specific facts of the allowed predicates.
+Allowed predicates to ask for 
+package/1
+containsPackage/2
+class/1
+containsClass/2
+importsClass/2
+You can ask if a specific fact is true e.g. "is package(packageXYZ) true?" or you can ask me to fill in a variable X e.g. "What is X in containsClass(packageXYZ, X)."
+
+
+assistant:
+Is package(teammates_logic_core) true?
+
+
+user:
+package(teammates_logic_core) is true
+
+
+assistant:
+Is containsClass(teammates_logic_core, X) true? What is X?
+
+
+user:
+containsClass(teammates_logic_core, X) is true
+containsClass(teammates_logic_core, teammates_logic_core_FeedbackSessionsLogic).
+containsClass(teammates_logic_core, teammates_logic_core_SendgridService).
+containsClass(teammates_logic_core, teammates_logic_core_ProfilesLogic).
+containsClass(teammates_logic_core, teammates_logic_core_InstructorsLogic).
+containsClass(teammates_logic_core, teammates_logic_core_MailjetService).
+containsClass(teammates_logic_core, teammates_logic_core_FeedbackResponsesLogic).
+containsClass(teammates_logic_core, teammates_logic_core_AccountsLogic).
+containsClass(teammates_logic_core, teammates_logic_core_MailgunService).
+containsClass(teammates_logic_core, teammates_logic_core_AdminEmailsLogic).
+containsClass(teammates_logic_core, teammates_logic_core_JavamailService).
+containsClass(teammates_logic_core, teammates_logic_core_StudentsLogic).
+containsClass(teammates_logic_core, teammates_logic_core_TaskQueuesLogic).
+containsClass(teammates_logic_core, teammates_logic_core_FeedbackResponseCommentsLogic).
+containsClass(teammates_logic_core, teammates_logic_core_EmailSenderService).
+containsClass(teammates_logic_core, teammates_logic_core_CoursesLogic).
+containsClass(teammates_logic_core, teammates_logic_core_FeedbackQuestionsLogic).
+
+
+
+assistant:
+Is package(teammates_logic_api) true?
+
+
+user:
+package(teammates_logic_api) is true
+
+
+assistant:
+Is containsClass(teammates_logic_api, X) true? What is X?
+
+
+user:
+containsClass(teammates_logic_api, X) is true
+containsClass(teammates_logic_api, teammates_logic_api_Logic).
+containsClass(teammates_logic_api, teammates_logic_api_EmailSender).
+containsClass(teammates_logic_api, teammates_logic_api_GateKeeper).
+containsClass(teammates_logic_api, teammates_logic_api_TaskQueuer).
+containsClass(teammates_logic_api, teammates_logic_api_EmailGenerator).
+
+
+assistant:
+I have all the information I need to deduce a rule to explain the positive and negative examples.
+The following rule explains all the positive and negative examples:
+isAllowedToUse(X, Y) :- package(X), containsClass(X, Z), containsClass(Y, W), importsClass(Z, W).
+
+
+//End of the conversation
+//Rule learned isAllowedToUse(X, Y) :- package(X), containsClass(X, Z), containsClass(Y, W), importsClass(Z, W).
+//changed names of the variables to A, B, C, and D
+//isAllowedToUse(A, B) :- package(A), containsClass(A, D), containsClass(B, C), importsClass(D, C).

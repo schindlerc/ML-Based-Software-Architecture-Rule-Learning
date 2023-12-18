@@ -1,0 +1,2 @@
+isAllowedToUse(teammates_logic_api, teammates_logic_core).
+isAllowedToUse(teammates_logic_backdoor, teammates_logic_api).

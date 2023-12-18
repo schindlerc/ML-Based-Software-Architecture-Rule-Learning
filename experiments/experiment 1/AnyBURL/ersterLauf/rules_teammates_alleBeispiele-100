@@ -1,0 +1,10 @@
+4	4	1.0	isA(X,Y) <= isAllowedToUse(A,X), isA(A,Y)
+2	2	1.0	isA(X,package) <= isAllowedToUse(A,X)
+2000	2	0.001	isAllowedToUse(X,Y) <= isA(X,A), isA(Y,A)
+808	767	0.9492574257425742	isA(X,class) <= 
+80	2	0.025	isAllowedToUse(X,Y) <= isAllowedToUse(A,X), isA(A,B), isA(Y,B)
+2	2	1.0	isA(X,Y) <= isAllowedToUse(X,A), isAllowedToUse(A,B), isA(B,Y)
+86	2	0.023255813953488372	isAllowedToUse(X,Y) <= isA(X,A), isA(B,A), isAllowedToUse(Y,B)
+2	2	1.0	isA(X,package) <= isAllowedToUse(X,A)
+4	4	1.0	isA(X,Y) <= isAllowedToUse(X,A), isA(A,Y)
+2	2	1.0	isA(X,Y) <= isAllowedToUse(A,X), isAllowedToUse(B,A), isA(B,Y)

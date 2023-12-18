@@ -1,0 +1,13 @@
+christian@staff0642 Popper-2.1.0 % python3 popper.py data/2pos 
+08:44:40 Searching programs of size: 2
+08:44:40 Searching programs of size: 3
+08:44:40 ********************
+08:44:40 New best hypothesis:
+08:44:40 tp:2 fn:0 size:3
+08:44:40 isAllowedToUse(A,B):- package(B),package(A).
+08:44:40 ********************
+********** SOLUTION **********
+Precision:1.00 Recall:1.00 TP:2 FN:0 TN:0 FP:0 Size:3
+isAllowedToUse(A,B):- package(B),package(A).
+******************************
+christian@staff0642 Popper-2.1.0 % 

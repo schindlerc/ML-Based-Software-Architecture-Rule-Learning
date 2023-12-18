@@ -1,0 +1,22 @@
+christian@staff0642 AMIE % java -jar ./amie-master/amie-milestone-intKB.jar -htr isAllowedToUse ./2pos/kb.tsv
+Using the default schema relations
+Assuming 9 as type relation
+Loading files... 
+  Starting kb.tsv
+  Finished kb.tsv, still running: 0
+Loaded 463 facts in 21 ms using -2 MB
+Using HeadCoverage as pruning metric with minimum threshold 0.01
+Using recursivity limit 3
+Default mining assistant that defines support by counting support on both head variables
+No minimum threshold on standard confidence
+Filtering on PCA confidence with minimum threshold 0.1
+Constants in the arguments of relations are disabled
+Lossless (query refinement) heuristics enabled
+MRT calls: 0
+Starting the mining phase... Using 8 threads
+Rule  Head Coverage  Std Confidence PCA Confidence Positive Examples Body size   PCA Body size  Functional variable
+?g  containsPackage  ?a  ?g  containsPackage  ?b   => ?a  isAllowedToUse  ?b  1  0,2   0,333333333 2  10 6  -1
+?a  isA  ?h  ?b  isA  ?h   => ?a  isAllowedToUse  ?b  1  0,003610108 0,2   2  554   10 -1
+Mining done in 43 ms
+Total time 98 ms
+2 rules mined.
